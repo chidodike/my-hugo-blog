@@ -76,6 +76,9 @@ params:
   homeInfoParams:
     Title: "Hi there \U0001F44B"
     Content: Welcome to my blog
+    I’ve spent over a decade helping people and teams work smarter with technology. My career began with hands-on IT support, but over time it evolved into something deeper—understanding how digital tools shape the employee experience and how good service design quietly empowers people to do their best work.
+Today, I focus on building modern workplace environments powered by Microsoft 365, Intune, and Azure. I love turning complex systems into something seamless—automating device setups, tightening security, and making sure that every login, update, or handover just works. Whether it’s rolling out a global MDM solution or fine-tuning a service desk process, my goal is always to make technology feel effortless for the people who use it.
+Across roles in security, healthcare, and academia, I’ve led teams, built ITSM frameworks, and delivered digital employee experiences that actually make a difference. I’m drawn to both the architecture and the human side of IT—because for me, great digital experiences start with empathy, not just infrastructure.
 
   socialIcons:
     - name: x
