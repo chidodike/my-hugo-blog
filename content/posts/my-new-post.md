@@ -2,6 +2,12 @@
 date: '2026-01-25T22:45:32Z'
 draft: false
 title: 'The Invisible Workspace: Making Tech Feel Human in 2026'
+cover:
+    image: "/the_invisible_workspace.png"
+    alt: "The Invisible Workspace"
+    caption: ""
+    relative: false
+    hidden: false
 ---
 
 ## The Best Technology is Invisible
