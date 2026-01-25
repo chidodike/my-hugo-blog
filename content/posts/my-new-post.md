@@ -8,6 +8,8 @@ cover:
     caption: ""
     relative: false
     hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
 ---
 
 ## The Best Technology is Invisible
