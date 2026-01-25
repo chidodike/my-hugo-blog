@@ -1,0 +1,12 @@
+# Hugo default output directory
+/public
+
+# Hugo resources directory
+/resources/_gen
+
+# Hugo build lock
+/.hugo_build.lock
+
+# OS specific
+.DS_Store
+Thumbs.db
