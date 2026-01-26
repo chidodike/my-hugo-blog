@@ -82,11 +82,11 @@ params:
     Content: I love exploring how tech makes work feel a little more human, from smarter digital experiences to cloud magic on Azure, AWS, and beyond, and I share thoughts on the tools, ideas, and stories shaping the modern workplace
   socialIcons:
     - name: x
-      url: "https://x.com/"
+      url: "https://x.com/@chidodike"
     - name: stackoverflow
       url: "https://stackoverflow.com"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/chidodike"
 
   analytics:
     google:
