@@ -83,8 +83,8 @@ params:
   socialIcons:
     - name: x
       url: "https://x.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+    #- name: stackoverflow
+      #url: "https://stackoverflow.com"
     - name: github
       url: "https://github.com/"
 
