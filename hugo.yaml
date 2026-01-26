@@ -1,4 +1,4 @@
-baseURL: "blog.chido.me"
+baseURL: "https://blog.chido.me/"
 title: Chido Dike - IT Service Management & Digital Transformation Expert
 pagination:
   pagerSize: 1
