@@ -1,7 +1,7 @@
 baseURL: "blog.chido.me"
 title: Chido Dike - IT Service Management & Digital Transformation Expert
 pagination:
-  pagerSize: 5
+  pagerSize: 1
 theme: PaperMod
 
 enableRobotsTXT: true
