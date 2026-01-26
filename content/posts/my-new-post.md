@@ -9,7 +9,7 @@ cover:
     caption: ""
     relative: false
     hidden: false
-    hiddenInList: true
+    hiddenInList: false
     hiddenInSingle: false
 ---
 
