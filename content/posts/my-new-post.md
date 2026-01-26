@@ -4,7 +4,7 @@ draft: false
 title: 'The Invisible Workspace: Making Tech Feel Human in 2026'
 tags: ["Modern Workplace", "Cloud", "User Experience"]
 cover:
-    image: "/the_invisible_workspace.png"
+    image: "/workspace.png"
     alt: "The Invisible Workspace"
     caption: ""
     relative: false
