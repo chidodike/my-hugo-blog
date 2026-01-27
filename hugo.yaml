@@ -21,10 +21,10 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: My Hugo Blog
-  description: "My Personal Blog using PaperMod"
+  title: Chido Dike - IT Service Management & Digital Transformation Expert
+  description: "My personal blog - blog.chido.me"
   keywords: [Blog, Portfolio, PaperMod]
-  author: Me
+  author: Chido Dike
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
@@ -44,7 +44,7 @@ params:
   comments: false
   hidemeta: false
   hideSummary: false
-  showtoc: false
+  showtoc: true
   tocopen: false
 
   assets:
@@ -63,7 +63,7 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
+    enabled: false  # needs to be explicitly set
     title: ExampleSite
     subtitle: "This is subtitle"
     imageUrl: "<img location>"
@@ -97,7 +97,7 @@ params:
       SiteVerificationTag: "XYZabc"
 
   cover:
-    hidden: true # hide everywhere but not in structured data
+    hidden: false # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
@@ -129,8 +129,8 @@ menu:
       url: /tags/
       weight: 20
     - identifier: example
-      name: "blog.chido.me"
-      url: https://blog.chido.me
+      #name: "blog.chido.me"
+      #url: https://blog.chido.me
       weight: 30
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
