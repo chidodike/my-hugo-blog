@@ -1,7 +1,7 @@
 baseURL: "https://blog.chido.me/"
 title: Chido Dike - IT Service Management & Digital Transformation Expert
 pagination:
-  pagerSize: 1
+  pagerSize: 5
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -44,7 +44,7 @@ params:
   comments: false
   hidemeta: false
   hideSummary: false
-  showtoc: true
+  showtoc: false
   tocopen: false
 
   assets:
@@ -78,7 +78,7 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
+    Title: "Hello!"
     Content: I love exploring how tech makes work feel a little more human, from smarter digital experiences to cloud magic on Azure, AWS, and beyond, and I share thoughts on the tools, ideas, and stories shaping the modern workplace
   socialIcons:
     - name: x
