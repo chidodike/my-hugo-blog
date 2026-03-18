@@ -92,6 +92,4 @@ Count the number of **"Required"** apps blocking the user from the desktop. If t
 
 Give your users their time back. Let the cloud do the heavy lifting.
 
----
-
 Thanks for reading. See you next week.
