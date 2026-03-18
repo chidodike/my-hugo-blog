@@ -34,7 +34,7 @@ They expect the exact same magic when they open their corporate laptop on Monday
 
 This is where the "Cloud Magic" we love so much actually touches the human experience.
 
-In 2026, the gold standard for device deployment is Zero Touch Provisioning—powered by tools like Windows Autopilot and Microsoft Intune (or Automated Device Enrollment via Apple Business Manager for Mac users). Microsoft is also rolling out the next generation of this capability—**Windows Autopilot Device Preparation** (sometimes called Autopilot v2)—which streamlines the flow further and is worth watching as it matures into mainstream adoption.
+In 2026, the gold standard for device deployment is Zero Touch Provisioning-powered by tools like Windows Autopilot and Microsoft Intune (or Automated Device Enrollment via Apple Business Manager for Mac users). Microsoft is also rolling out the next generation of this capability-**Windows Autopilot Device Preparation** (sometimes called Autopilot v2)-which streamlines the flow further and is worth watching as it matures into mainstream adoption.
 
 Here is how it should look:
 
@@ -70,7 +70,7 @@ Here is the modern strategy for the Enrollment Status Page:
 Only block the desktop for the absolute essentials. A web browser, your Zero Trust network access agent (so they are secure), and Microsoft 365. That is it.
 
 **The Background Magic**
-Let the user get to the desktop within 15–20 minutes. One caveat worth knowing: as of early 2026, Windows devices now install the latest monthly security patch automatically during the OOBE process—a welcome security improvement that can add up to 20 minutes to provisioning on a fresh device. Factor this into your target, and communicate it to new hires in advance so the wait doesn't feel like a failure. Once they are in, reading their welcome emails and chatting on Teams, Intune can silently stream the heavier applications (like Adobe or AutoCAD) in the background.
+Let the user get to the desktop within 15–20 minutes. One caveat worth knowing: as of early 2026, Windows devices now install the latest monthly security patch automatically during the OOBE process-a welcome security improvement that can add up to 20 minutes to provisioning on a fresh device. Factor this into your target, and communicate it to new hires in advance so the wait doesn't feel like a failure. Once they are in, reading their welcome emails and chatting on Teams, Intune can silently stream the heavier applications (like Adobe or AutoCAD) in the background.
 
 **Self-Service Empowerment**
 Put the rest of the apps in the Company Portal. Let the user choose what they need, when they need it. It builds trust and reduces helpdesk tickets.
