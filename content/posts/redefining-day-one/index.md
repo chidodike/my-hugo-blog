@@ -5,18 +5,11 @@ title: 'Zero Touch, High Magic: Redefining the "Day One" Experience'
 cover:
   image: "day-one-header.png"
   alt: "Zero Touch Provisioning vs Legacy Day One"
-  caption: "The Zero Touch difference"
   relative: true
   hiddenInSingle: false
 tags: ["ZeroTouch", "Autopilot", "Intune", "Modern Workplace", "Employee Experience"]
 ---
 
-**Topic:** Windows Autopilot, Onboarding, Digital Employee Experience (DEX)
-
----
-
-
----
 
 ## The Ghost of "Day One" Past
 
