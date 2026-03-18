@@ -5,7 +5,6 @@ title: 'Zero Trust, Zero Friction: Why Passwords are the Enemy of Experience'
 cover:
   image: "passwordless-header.png"
   alt: "Passwords vs Biometrics"
-  caption: "The Passwordless difference"
   relative: true
   hiddenInSingle: false
 tags: ["ZeroTrust", "Passwordless", "EntraID", "Modern Workplace", "Employee Experience"]
