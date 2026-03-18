@@ -1,6 +1,6 @@
 ---
 date: '2026-02-11T19:34:28Z'
-draft: true
+draft: false
 title: 'Zero Trust, Zero Friction: Why Passwords are the Enemy of Experience'
 cover:
   image: "passwordless-header.png"
@@ -8,7 +8,7 @@ cover:
   caption: "The Passwordless difference"
   relative: true
   hiddenInSingle: false
-tags: ["ZeroTrust", "Passwordless", "EntraID", "ModernWorkplace", "EmployeeExperience"]
+tags: ["ZeroTrust", "Passwordless", "EntraID", "Modern Workplace", "Employee Experience"]
 ---
 
 ## The Security vs. Usability War
