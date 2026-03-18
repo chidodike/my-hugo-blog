@@ -2,14 +2,18 @@
 date: '2026-02-05T19:56:07Z'
 draft: false
 title: 'Zero Touch, High Magic: Redefining the "Day One" Experience'
+cover:
+  image: "day-one-header.png"
+  alt: "Zero Touch Provisioning vs Legacy Day One"
+  caption: "The Zero Touch difference"
+  relative: true
+  hiddenInSingle: false
 tags: ["ZeroTouch", "Autopilot", "Intune", "Modern Workplace", "Employee Experience"]
 ---
 
 **Topic:** Windows Autopilot, Onboarding, Digital Employee Experience (DEX)
 
 ---
-
-> **[HEADER IMAGE PROMPT:** A split screen. On the left, a frustrated new employee sits in a sterile office cubicle, staring at a progress bar that reads "Installing 1 of 45 applications..." On the right, a smiling employee sits on a sunlit couch at home, easily opening a brand-new laptop box while holding a coffee mug.**]**
 
 
 ---
