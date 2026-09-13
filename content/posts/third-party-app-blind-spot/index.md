@@ -1,6 +1,6 @@
 ---
-date: '2026-03-18T19:41:14Z'
-draft: true
+date: '2026-09-13T01:12:00Z'
+draft: false
 title: 'Third Party App Blind Spot'
 cover:
   image: "third-party-blind-spot-header.png"
