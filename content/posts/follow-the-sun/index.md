@@ -1,6 +1,6 @@
 ---
-date: '2026-09-13T12:00:00Z'
-draft: true
+date: '2026-09-14T09:00:00+01:00'
+draft: false
 title: 'Follow-the-Sun Without Dropping the Baton'
 cover:
   image: "follow-the-sun-header.png"
