@@ -11,85 +11,64 @@ tags: ["ZeroTouch", "Autopilot", "Intune", "Modern Workplace", "Employee Experie
 ---
 
 
-## The Ghost of "Day One" Past
+## The old first day
 
-Think back to your first day at a new job five or ten years ago.
+Think back to your first day at a new job, five or ten years ago.
 
-You sat at a new desk. An IT person came by with a heavy, clunky laptop, a sticky note with a temporary password, and a multi-page printout of instructions. You spent the next four hours watching progress bars, mapping network drives, calling the helpdesk to get access to your email, and waiting for the VPN to connect.
+Someone from IT turned up with a heavy laptop, a sticky note with a temporary password, and a multi-page printout. You spent the next four hours watching progress bars, mapping network drives, ringing the helpdesk for access to your email, and waiting for the VPN to connect.
 
-It was a rite of passage. It was also a terrible introduction to a company.
+It was a rite of passage, and it was a poor introduction to a company. If someone spends their first day fighting with technology, the message they take away is that the place is slow, dated, and going to be a struggle.
 
-When a new hire spends their first day fighting with technology, the subconscious message we send them is: *We are slow, we are outdated, and everything here is going to be a struggle.*
-
-In the Modern Workplace, that legacy "Day One" is unacceptable. The benchmark is no longer other enterprise companies; the benchmark is the consumer experience. When your employee buys a new smartphone on a Sunday, they turn it on, sign in, and their life is synced in minutes.
-
-They expect the exact same magic when they open their corporate laptop on Monday morning.
+The comparison people make now isn't with other employers. It's with their phone. Somebody buys a new handset on a Sunday, signs in, and has their life back within minutes. They expect the corporate laptop on Monday to behave the same way.
 
 ---
 
-## Enter "Zero Touch" Provisioning
+## What zero touch looks like
 
-This is where the "Cloud Magic" we love so much actually touches the human experience.
+The gold standard for deployment is zero-touch provisioning, using Windows Autopilot and Microsoft Intune (or Automated Device Enrollment through Apple Business Manager for Macs). Microsoft is also rolling out Windows Autopilot Device Preparation, sometimes called Autopilot v2. It streamlines the flow further and is worth watching as it matures.
 
-In 2026, the gold standard for device deployment is Zero Touch Provisioning-powered by tools like Windows Autopilot and Microsoft Intune (or Automated Device Enrollment via Apple Business Manager for Mac users). Microsoft is also rolling out the next generation of this capability-**Windows Autopilot Device Preparation** (sometimes called Autopilot v2)-which streamlines the flow further and is worth watching as it matures into mainstream adoption.
+In practice:
 
-Here is how it should look:
+- The hardware vendor ships the laptop straight to the employee's home, and IT never touches the box.
+- The employee joins their home Wi-Fi and signs in with their work email address.
+- The device is recognised, picks up the security baseline, and quietly installs the apps they need.
 
-- The hardware vendor ships the laptop directly to the employee's house. IT never touches the physical box.
-- The employee connects to their home Wi-Fi and types in their company email address.
-- The cloud recognises the device, applies the Zero Trust security baseline, and silently delivers the apps they need.
-
-There are no imaging servers. There are no USB boot drives. There is just identity, hardware, and the cloud.
+There are no imaging servers and no USB boot drives. It's identity, hardware and the cloud.
 
 ---
 
-## The Technical Trap: The Dreaded ESP
+## Where teams spoil it
 
-But here is where many IT teams ruin the magic. They take the new cloud tools and apply the old "imaging" mindset to them.
+Many teams take the new tooling and bring the old imaging mindset with them.
 
-During the Autopilot process, users see an **Enrollment Status Page (ESP)**. It blocks the user from getting to their desktop until certain policies and apps are installed.
+During Autopilot, users see the Enrollment Status Page (ESP). It holds them at the setup screen until the policies and apps you've marked as required have installed. Too many teams use it to push every application the company owns: a 10GB CAD package, three browsers and a dozen legacy security agents, all over a home broadband connection. The result is a two-hour wait that often ends in a timeout and a failed enrolment. The ESP's default timeout is 60 minutes, so a heavy payload on a slow line is a gamble.
 
-Too many engineers use this page to install every single application the company owns. They force a 10GB AutoCAD installation, three different web browsers, and a dozen legacy security agents down the pipe over a home Wi-Fi connection. The result? The "Zero Touch" magic turns into a two-hour waiting game, and the setup inevitably times out and fails.
+You've taken a good process and loaded it until it breaks.
 
-We took a beautiful, human-centric process and broke it with technical greed.
-
-> **A smarter alternative**, if your team has the capacity, is **pre-provisioned deployment** (also called White Glove or Technician Flow), where IT or your OEM does a partial setup pass before the device ships. This front-loads the heavy lifting so the user's OOBE is already nearly complete when they turn it on. But this only works if you have the logistics to support it. For most SMBs and remote-first teams, a well-optimised user-driven flow with a lean ESP is still the better bet.
+> **An alternative, if you have the capacity:** pre-provisioned deployment (also called White Glove or Technician Flow), where IT or your OEM does a partial setup before the device ships. That front-loads the heavy work so the user's first boot is nearly finished. It only works if you have the logistics to support it. For most SMBs and remote-first teams, a well-tuned user-driven flow with a lean ESP is still the better bet.
 
 ---
 
-## The Lean Day One Strategy
+## A lean first day
 
-To make technology feel invisible, we have to rethink our payload. The goal of Day One is not to build a fully loaded workstation. The goal is to get the user to a secure, productive desktop as fast as humanly possible.
+The aim of day one isn't a fully loaded workstation. It's a secure, usable desktop as quickly as you can get there.
 
-Here is the modern strategy for the Enrollment Status Page:
+**Block on the essentials only.** A browser, your zero-trust network access agent so the device is protected, and Microsoft 365. That's the list.
 
-**The Core Minimum**
-Only block the desktop for the absolute essentials. A web browser, your Zero Trust network access agent (so they are secure), and Microsoft 365. That is it.
+**Let the rest arrive in the background.** Aim to get the user to their desktop within 15 to 20 minutes. One caveat: as of early 2026, Windows devices install the latest monthly security update automatically during OOBE, which can add up to 20 minutes on a fresh device. Build that into your target and tell new starters in advance, so a longer wait doesn't look like a failure. Once they're in, reading welcome emails and joining Teams, Intune can deliver heavier applications such as Adobe or AutoCAD without getting in the way.
 
-**The Background Magic**
-Let the user get to the desktop within 15–20 minutes. One caveat worth knowing: as of early 2026, Windows devices now install the latest monthly security patch automatically during the OOBE process-a welcome security improvement that can add up to 20 minutes to provisioning on a fresh device. Factor this into your target, and communicate it to new hires in advance so the wait doesn't feel like a failure. Once they are in, reading their welcome emails and chatting on Teams, Intune can silently stream the heavier applications (like Adobe or AutoCAD) in the background.
-
-**Self-Service Empowerment**
-Put the rest of the apps in the Company Portal. Let the user choose what they need, when they need it. It builds trust and reduces helpdesk tickets.
+**Put everything else in the Company Portal.** Let people choose what they need when they need it. It builds trust and cuts tickets.
 
 ---
 
-## The Human Impact
+## Why it matters
 
-Why do we care so much about device deployment? Because technology is the digital equivalent of the office building.
+If you invited someone to a physical office, you wouldn't ask them to assemble their own chair and wire their own desk before starting. You'd give them a coffee and a ready desk.
 
-If you invite a new hire to a physical office, you don't make them build their own chair and wire their own desk before they can work. You welcome them in, offer them a coffee, and give them a clean, ready space.
-
-When we nail the Autopilot experience, we are doing the digital equivalent. We are telling the employee: *We respect your time, we trust you, and we have given you the best tools to do your job.*
+A clean Autopilot experience is the digital version of that. It tells the new starter that you value their time and have given them what they need.
 
 ---
 
-## This Week's Challenge: Audit Your Payload
+## Try this
 
-Here is your actionable step for the week. Look at your Autopilot Enrollment Status Page (ESP) configuration in Intune.
-
-Count the number of **"Required"** apps blocking the user from the desktop. If that number is higher than five, you are adding unnecessary friction. Pick three heavy applications and move them to background deployment.
-
-Give your users their time back. Let the cloud do the heavy lifting.
-
-Thanks for reading. See you next week.
+Open your Autopilot Enrollment Status Page configuration in Intune and count the apps marked as required. If the number is above five, you're adding friction. Pick three of the heaviest and move them to background deployment, then time the next new starter's first day and compare.
