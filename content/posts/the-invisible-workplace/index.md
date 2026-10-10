@@ -13,45 +13,33 @@ cover:
     hiddenInSingle: false
 ---
 
-## The Best Technology is Invisible
+## Nobody wants to think about the cloud
 
-We spend a lot of time talking about the "Cloud" and debating Azure versus AWS. We obsess over Intune configurations, Zero Trust architectures, and the latest patching cycles.
+Ask an accountant closing month-end whether she's happy with Azure or AWS and you'll get a blank look. A designer sketching a concept doesn't care how your Intune policies are structured. A nurse checking a chart on a ward PC has no opinion on your patch cycle. They want the thing to open, to be quick, and to behave the same way tomorrow.
 
-But if we are doing our jobs right, the person sitting at the desk shouldn't care about any of that. Whether it is an accountant closing the month-end, a designer sketching a concept, or a nurse checking a patient chart, the technology should fade into the background.
+I've spent most of my career on the IT side of that gap. For years the job was control. We locked down settings, forced restarts, and treated every user as a risk to be managed. Some of that was reasonable at the time. It also meant we got very good at running machines and only a little better at understanding the people using them.
 
-To them, there is no "Cloud." There is just **Work**.
+This blog is about closing that gap.
 
-As I transition into this new era of the Modern Workplace, I have realized something critical. We spent the last decade mastering the Machine. In 2026, we need to master the Experience.
+## Same tools, different aim
 
-## The Shift: From "Managing Devices" to "Enabling Humans"
+Take three ordinary pieces of the job.
 
-For years, the role of a Systems Administrator was about control. We locked down settings, forced restarts, and treated the user like a security risk.
+Data protection can be set up so someone can work from a café without wondering whether they're allowed to. App deployment can mean the right tools are already on the laptop when they first sign in, instead of a ticket and a wait. Patching can happen in the background, without a forced restart halfway through a presentation.
 
-But the Modern Workplace is different. It is about leveraging that "Cloud Magic" to make work feel a little more human. This applies to everything from the identity backbone of Entra ID to the scalability of AWS.
+None of that needs new technology. It's the Intune, Entra ID and cloud platforms most of us already run, pointed at a different goal: the person at the desk gets on with their work and doesn't have to think about ours.
 
-It is not just about blocking USB drives. It is about ensuring data is safe so employees can work from a coffee shop without fear.
+## Why now
 
-It is not just about deploying apps. It is about making sure the tools they need are there the second they log in, almost like magic.
+Windows 10 support has ended. AI features are turning up inside Windows and Microsoft 365. The office is wherever somebody opens a laptop. A lot of the old assumptions about where work happens, and how we protect it, are being rebuilt anyway, so it's a good moment to ask who we're building for.
 
-It is not just about patching Windows. It is about using AI to fix issues silently in the background so their creative flow is never interrupted.
+## What I'll write about
 
-## Why This Blog? Why Now?
+- **Digital experience:** how to measure how work feels, alongside whether the systems are up.
+- **Devices:** Autopilot, Intune, and life after Windows 10.
+- **The cloud underneath:** how Azure and AWS sit behind the modern desktop.
+- **Policy:** what our decisions do to the people who live with them.
 
-I started this project because I love exploring the tools and stories that shape how we work.
+Some posts will be hands-on and some will be opinion. If you're an engineer, an architect, or someone who runs a team and wants technology that works without fuss, you're who I'm writing for.
 
-We are standing at a massive intersection. Windows 10 is behind us, and AI is embedded in our operating systems. The boundaries of the office have dissolved into the cloud.
-
-Over the coming weeks in 2026, I will be sharing my thoughts, labs, and discoveries on:
-
-*   **Smarter Digital Experiences**: How to measure and improve the "feel" of the workplace.
-*   **Device Strategy**: Navigating the post-Windows 10 world with Intune and Autopilot.
-*   **The Cloud Backbone**: How Azure and AWS power the modern desktop.
-*   **The Human Story**: How tech policies actually impact the people we serve.
-
-## Let’s Build Something Better
-
-The "Modern Workplace" isn't a place you go. It is a platform you carry with you.
-
-If you are an engineer, an architect, or just someone who loves when tech works seamlessly, I invite you to follow along. We are going to get technical and strategic, but we will always keep the human element in focus.
-
-Welcome to the blog. Let’s get to work.
+Welcome to the blog.

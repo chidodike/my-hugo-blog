@@ -10,78 +10,52 @@ cover:
 tags: ["ITSM", "ServiceDesk", "FollowTheSun", "Modern Workplace", "Employee Experience", "Leadership"]
 ---
 
-## The Ticket That Travelled the World
+## The ticket that travelled the world
 
-Picture this. It is 16:47 in London. A regional operations lead is mid-incident — a line-of-business tool has gone quiet for a cluster of colleagues in the Middle East. She has already spoken to the Service Desk twice. The analyst has the logs, the timeline, the workaround that almost worked. Shift change is in thirteen minutes.
+It's 16:47 in London. A regional operations lead is in the middle of an incident: a line-of-business tool has gone quiet for a group of colleagues in the Middle East. She has already spoken to the Service Desk twice. The analyst has the logs, the timeline and a workaround that almost worked. Shift change is in thirteen minutes.
 
-The ticket is assigned to the overnight queue. The notes say “escalated — see comments.” The comments say “user will test in the morning.”
+The ticket goes to the overnight queue. The notes say "escalated, see comments". The comments say "user will test in the morning".
 
-Morning arrives in Singapore. A different analyst opens the ticket. The context is a trail of fragments. They call her. She explains it again. They ask for the same screenshots. By the time EMEA is back at the desk, the issue has travelled the globe and aged twelve hours — and nobody can quite say who owns it.
+Morning arrives in Singapore. A different analyst opens the ticket and finds a trail of fragments. They ring her. She explains it again and sends the same screenshots again. By the time EMEA is back at their desks, the issue has been round the world and aged twelve hours, and nobody could say for sure who owns it.
 
-The dashboard still looks fine. The ticket moved. Coverage was “24/7.”
+The dashboard looks fine. The ticket moved, and coverage was 24/7. Her experience of it was something else.
 
-The human experience was not.
+## Moving tickets and moving understanding
 
-This is the **dropped baton**.
+I've led distributed support across the UK, EMEA and APAC on a genuine follow-the-sun model, and the pattern is familiar. On paper it works well. Work follows daylight, and major incidents keep moving while one region sleeps. The machine metrics agree: tickets change assignee, volume is covered, and first-contact resolution looks healthy if you count the first queue that touched the ticket.
 
-## The Problem Is Human, Not Geographical
+The person on the other end doesn't experience a globe, though. They experience one conversation that keeps starting over. The real question for digital employee experience in a global team is whether that person felt looked after, and a ticket changing hands doesn't tell you.
 
-I have spent a lot of time leading distributed support — UK, EMEA, APAC — in a genuine follow-the-sun model. On paper it is elegant Cloud Magic. Work follows daylight. Major incidents keep moving while you sleep. The Modern Workplace, we tell ourselves, never closes.
+I've watched analysts pick up an overnight ticket with only a priority field and a note saying "chasing vendor". I've also sat on incident bridges at shift change and seen context leak away as one timezone signs off and the next signs on. Follow-the-sun that only moves tickets is logistics. When it moves understanding, it's service.
 
-The machine metrics will often agree. Tickets change assignee. Volume is covered. First-contact resolution looks healthy if you count the first *queue* that touched it.
+## What a clean handoff holds
 
-The colleague on the other end does not experience a globe. They experience one conversation that keeps starting over. That is DEX for global operations. Not “did the ticket move.” Did the person feel held?
+A good follow-the-sun operation works like a relay, with the baton passed on purpose. Whoever picks up the ticket should be able to answer these without reading forty comments:
 
-I have coached analysts who inherited a zombie at 02:00 with nothing but a priority field and “chasing vendor.” I have sat on the incident bridge at shift change and watched context leak as one timezone signs off and another signs on.
+- What do we know, and what have we already ruled out?
+- What did the last person try, and what happened?
+- Who is the colleague, what is their timezone, and when did we last speak to them?
+- What's the next concrete action? "Investigate" doesn't count.
+- Who owns this right now, even if the analyst working it is about to change?
 
-Follow-the-sun that only moves tickets is logistics. Follow-the-sun that moves understanding is service.
+Tickets have assignees. Incidents need owners.
 
-## What a Clean Handoff Actually Looks Like
+In practice this comes down to three habits. First, a handoff checklist covering symptoms, evidence, attempts, next action and user context. Second, a warm transfer written for the person coming on shift, ideally by voice on the incident bridge and not as a comment at 16:59. Third, a living timeline, so the handover from EMEA to APAC doesn't reset the story.
 
-A healthy follow-the-sun operation is not a twenty-four-hour conveyor belt. It is a relay. You should be able to answer, without a forensic read of forty comments:
+I review handoff quality alongside tone, FCR and CSAT. When knowledge, self-service and RCA are working, the same "how do I...?" question stops turning into three tickets in three regions, and fewer people have to explain the same failure to a new face every morning.
 
-- What do we actually know — and what have we already ruled out?
-- What did the last human try, and what happened?
-- Who is the colleague, in their timezone, and when did we last speak to them?
-- What is the next concrete action — not “investigate,” a real next step?
-- Who owns the baton right now, even if the working analyst is about to change?
+## How teams get it wrong
 
-Tickets can have an assignee. Incidents need an owner.
+Most organisations staff the clock, publish the rota and celebrate 24/7 coverage. SLAs stay green. Overnight tickets get updated just enough to keep the clock honest and not enough to move the problem on. Users learn that "follow-the-sun" means telling the story three times, analysts park the messy inheritances, and CSAT slips quietly even though the ticket did move.
 
-What good looks like is unglamorous: a **handoff checklist** (symptoms, evidence, attempts, next action, user context), a **warm transfer** written for the incoming human — voice on the major-incident bridge, not a comment at 16:59 — and a living timeline so EMEA-to-APAC does not reset the story. Analysts can change. The owner does not evaporate at sunset.
+Tooling won't fix it. Jira Service Management will change the assignee when asked, but it won't write the story. If your process rewards closing a loop in your own shift more than setting up the next one, you'll get good local metrics and a global mess.
 
-I review handoff quality the way I review tone, FCR, and CSAT. The same “how do I…?” should not become three tickets in three regions. When we got serious about knowledge, self-service, and RCA, we drove recurring incidents down materially — on the order of a third. Fewer people explaining the same failure to a new face every morning.
+## Try this week
 
-## The Trap Teams Fall Into
+Pick one ticket that crossed a timezone in the last seventy-two hours. Read it as if you were the incoming analyst at 02:00 and ask:
 
-Here is the practical nuance most teams miss.
-
-Most organisations staff the clock, publish the rota, and celebrate 24/7 coverage. You will recognise the pattern. SLAs stay green. Overnight tickets become zombies — updated enough to keep the clock honest, not enough to move the problem. Users learn that “follow-the-sun” means “tell the story three times.” Analysts park the messy inheritances. CSAT quietly sags, because the ticket *did* move.
-
-That is 24/7 coverage that is actually **24/7 confusion**. Green on the outside — a close cousin of the watermelon problem — and a colleague who has lost an afternoon on the inside.
-
-The other trap is treating handoff as a tooling problem. Jira Service Management will dutifully change the assignee. None of that writes the story. If your process rewards closing the loop in *your* shift more than setting up the next one, you will get heroic local metrics and a global mess.
-
-Zero Trust is useful here as a metaphor. Trust nothing that is not verified — including the assumption that “someone has it.” Then get out of the way: Zero Friction for the person who just wants their tool back.
-
-## This Week’s Challenge: Hold the Baton
-
-My challenge to you this week is simple. Do not start with a new tool. Start with one relay.
-
-Pick **one** ticket that crossed a timezone in the last seventy-two hours. Read it as if you were the incoming analyst at 02:00.
-
-Ask:
-
-1. Can I take the next action without calling the colleague back to re-explain?
+1. Can I take the next action without ringing the colleague to have them explain it again?
 2. Is there a named owner, or only a last assignee?
-3. Would I be proud to put my name on this note?
+3. Would I put my name to this note?
 
-If any answer is no, that is the dropped baton.
-
-Then write a **one-page handoff checklist** with your team — five to seven fields — and use it for the next five cross-region handoffs. Coach the first one live.
-
-When follow-the-sun carries the story as well as the ticket, coverage stops being a scheduling trick — and DEX stops being undermined by the clock.
-
-That is when the Cloud Magic feels intentional again. And work starts to feel a little more human.
-
-Thanks for reading. See you next week.
+If any answer is no, that's your dropped baton. Then write a one-page handoff checklist with your team, five to seven fields, and use it for the next five cross-region handoffs. Coach the first one live.

@@ -10,76 +10,59 @@ cover:
 tags: ["ZeroTrust", "Passwordless", "EntraID", "Modern Workplace", "Employee Experience"]
 ---
 
-## The Security vs. Usability War
+## Security versus the people it protects
 
-For as long as corporate IT has existed, there has been a fundamental tug-of-war between the Security Team and the End User.
+For as long as corporate IT has existed, the security team and the people using the systems have been pulling in opposite directions.
 
-The old belief was simple: To make something secure, you must make it difficult to access. This philosophy gave us the 90-day password expiration policy. It gave us requirements for one uppercase letter, one number, one special character, and the blood of a firstborn. It gave us VPNs that drop connection every time you switch from Wi-Fi to cellular. It gave us MFA (Multi-Factor Authentication) fatigue, where users are prompted so many times a day they just blindly tap "Approve" out of sheer habit.
+The old belief was that something has to be difficult to be secure. That gave us 90-day password expiry. It gave us rules demanding an uppercase letter, a number and a special character. It gave us VPNs that dropped every time a laptop moved from Wi-Fi to mobile data, and MFA fatigue, where people get prompted so often they tap "Approve" without reading.
 
-We built massive digital fortresses, but we made the drawbridge so heavy that our own employees couldn't get inside to do their work.
+We built strong walls and then made the gate too heavy for our own staff to open.
 
-In 2026, we have to call a truce. If your security policies degrade the human experience, your users will simply find a way around them. They will email sensitive files to their personal Gmail. They will use unauthorized shadow IT apps.
-
-Strict, high-friction security isn't actually secure at all. It just breeds creative workarounds.
+People who can't get their work done don't stop working. They email files to a personal Gmail account. They sign up for apps IT has never heard of. High-friction security ends up less secure than it looks on paper, because it breeds workarounds.
 
 ---
 
-## The Magic of Passwordless
+## Passwordless, in practice
 
-In the Modern Workplace, the ultimate expression of "Cloud Magic" is the death of the password.
+A password is a weak point. It can be guessed, phished, written on a sticky note or reused on a dozen other sites.
 
-A password is a human vulnerability. It can be guessed, phished, written on a sticky note, or reused across a dozen different personal websites.
+There are three main ways to get rid of it:
 
-When we shift to Passwordless Authentication, we completely change the dynamic. The main options available today are:
+- **Windows Hello for Business:** the right choice for managed, corporate-joined devices. A face, fingerprint or PIN becomes the credential, tied to the device's TPM chip.
+- **FIDO2 security keys:** a physical key (USB or NFC) that gives phishing-resistant sign-in. Good for shared workstations and high-security roles.
+- **Passkeys:** the newest option. Microsoft is extending Entra passkey support to Windows so that unmanaged and personal devices, where Windows Hello for Business isn't available, can sign in without a password. Check its current status before you plan around it, because rollout is still early.
 
-- **Windows Hello for Business** - the recommended choice for managed, corporate-joined devices. The user's face, fingerprint, or PIN becomes their credential, backed by the device's TPM chip.
-- **FIDO2 Security Keys** - a physical hardware key (USB or NFC) that provides phishing-resistant authentication, ideal for shared workstations or high-security roles.
-- **Passkeys** - the newest addition to this toolkit. Microsoft Entra passkeys on Windows entered public preview in mid-March 2026, extending passwordless sign-in to unmanaged and personal devices where Windows Hello for Business isn't available. Worth piloting now, with the awareness that it is still in early rollout.
-
-Across all three, we aren't just making the environment infinitely more secure against phishing attacks; we are giving the user a beautiful, seamless experience.
-
-Imagine an accountant sitting down at a coffee shop. They open their laptop lid. The infrared camera recognises their face. They are instantly signed into Windows, and because of Single Sign-On (SSO), they are simultaneously authenticated into their email, their AWS console, and their HR software.
-
-Zero passwords typed. Zero MFA prompts bombarding their phone. Just instant, secure access to their work.
+For the user, the difference is easy to see. An accountant sits down in a café and opens the lid. The camera recognises her face and she's signed in to Windows. Single sign-on carries her into email, the AWS console and the HR system. She typed no password and her phone didn't buzz once.
 
 ---
 
-## The Brains Behind the Magic: Conditional Access
+## Conditional Access does the deciding
 
-How do we achieve this without leaving the front door wide open? The answer is Identity-driven security, specifically tools like Entra ID Conditional Access.
+The way to make that safe is identity-driven security, and in a Microsoft estate that means Entra ID Conditional Access.
 
-Conditional Access is the invisible bouncer at the door of your digital workspace. Instead of blindly prompting a user for a password and an MFA code every morning, it evaluates millions of signals in milliseconds:
+Instead of asking everyone for a password and an MFA code every morning, Conditional Access weighs up signals as each sign-in happens:
 
-- Who is the user?
-- Are they on an Intune-compliant, corporate-managed device?
-- Are they in a familiar location?
-- Is there any unusual risk associated with their sign-in?
+- who the user is
+- whether the device is compliant in Intune and corporate-managed
+- whether the location is familiar
+- whether the sign-in carries any unusual risk
 
-If the user is on their trusted corporate laptop, using Windows Hello, sitting in their normal home office... the cloud says, "I know you, I trust this device, come on in." No friction.
+If the user is on their usual laptop, signing in with Windows Hello from their normal home office, the answer is simply yes. If the same account turns up on an unmanaged personal iPad in another country at 3am, access is blocked or the user is asked for a phishing-resistant method.
 
-But if that same user's identity tries to log in from an unmanaged, personal iPad in another country at 3:00 AM? The bouncer steps in, blocks access, and demands a phishing-resistant MFA token.
-
-We apply the friction only when the risk demands it.
+Friction goes where the risk is. Everywhere else it can be left out.
 
 ---
 
-## Security That Feels Invisible
+## What to aim for
 
-The goal of the Modern Workplace Architect is to build a Zero Trust architecture that feels like Zero Friction to the user.
-
-When identity is the new perimeter, the device becomes the key. We don't need to punish our employees with complex password rotations anymore. We let the cloud do the heavy lifting of evaluating risk, and we let the humans get back to doing what they do best: their actual jobs.
+The goal is a zero-trust design that feels like no friction to the person using it. When identity is the perimeter and the device is the key, there's far less reason to make people rotate complicated passwords. The checks happen in the background, and people get back to their jobs.
 
 ---
 
-## This Week's Challenge: Audit Your Interruptions
+## Check your own prompts
 
-Here is your actionable step for the week. Log into your Entra ID admin centre and open two reports: the **Sign-in logs** and the **Authentication Methods Activity** report.
+Open the Entra admin centre and look at two reports: **Sign-in logs** and **Authentication Methods Activity**.
 
-Look at your MFA prompt frequency. How many times a day are your users being challenged on their primary managed device? How many password resets did the helpdesk handle this week?
+How often are users challenged for MFA on their primary managed device? How many password resets did the helpdesk handle this week? If people are being prompted more than once a day on a device they use every day, your Conditional Access policies need tuning. The aim is to have MFA satisfied by the device sign-in itself and not by every individual app.
 
-If your users are being prompted for MFA more than once a day on their primary managed device, your Conditional Access policies need tuning. The goal is to shift MFA satisfaction to the device sign-in itself, not to every individual app. Start mapping out a pilot group for a true Passwordless experience using Windows Hello for Business - and if your organisation has unmanaged or BYOD devices in scope, keep an eye on the Entra passkeys public preview that launched this month.
-
-Give your users their memory space back. Kill the password.
-
-
-Thanks for reading. See you next week.
+A sensible next step is a pilot group on Windows Hello for Business. If you have BYOD or unmanaged devices in scope, keep an eye on Entra passkey support as it develops.
