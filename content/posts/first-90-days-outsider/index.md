@@ -1,6 +1,6 @@
 ---
-date: '2026-10-12T09:00:00+01:00'
-draft: true
+date: '2026-10-10T23:40:00+01:00'
+draft: false
 title: 'The First 90 Days as an Outsider Leader'
 cover:
   image: "first-90-days-cover.png"
